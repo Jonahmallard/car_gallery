@@ -1,0 +1,48 @@
+Started GET "/" for ::1 at 2020-11-23 19:31:26 -0600
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jonah/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jonah/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 25.9ms | Allocations: 478)
+Completed 200 OK in 80ms (Views: 57.6ms | ActiveRecord: 0.0ms | Allocations: 2616)
+
+
+Started GET "/" for ::1 at 2020-11-23 19:33:02 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms | Allocations: 1460)
+
+
+  
+NameError (uninitialized constant ActionContoller
+Did you mean?  ActionController):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-11-23 19:33:20 -0600
+Started GET "/" for ::1 at 2020-11-23 19:36:01 -0600
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jonah/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jonah/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.6ms | Allocations: 315)
+Completed 200 OK in 81ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 1594)
+
+
+Started GET "/test" for ::1 at 2020-11-23 19:36:08 -0600
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 146)
+
+
+Started GET "/test" for ::1 at 2020-11-23 19:36:45 -0600
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/test" for ::1 at 2020-11-23 19:37:22 -0600
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/test" for ::1 at 2020-11-23 19:38:34 -0600
+Processing by ApplicationController#test as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
