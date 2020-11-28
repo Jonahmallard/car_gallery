@@ -24,7 +24,7 @@ class CarForm {
 
     render() {
         const form = document.createElement("form");
-        form.className = "add-toy-form";
+        form.className = "add-car-form";
         form.innerHTML = this.renderInnerHTML();
         this.form = form;
         this.constructor.container.append(form);

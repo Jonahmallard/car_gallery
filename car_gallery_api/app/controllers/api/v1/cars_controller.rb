@@ -8,7 +8,7 @@ class Api::V1::CarsController < ApplicationController
         @car = Car.create(car_params)
         @car.likes = 0
         @car.save
-        render json: @car, except: [:created_at, :updated_at]
+        render json: @car
     end
 
     def update
@@ -20,7 +20,7 @@ class Api::V1::CarsController < ApplicationController
     def destroy
         @car = Car.find_by_id(params[:id])
         @car.destroy
-        render json: @car, except: [:created_at, :updated_at]
+        render json: @car
     end
 
     private 

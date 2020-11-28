@@ -1365,3 +1365,686 @@ Processing by Api::V1::CarsController#index as */*
 Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1713)
 
 
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 15:26:31 -0600
+Processing by Api::V1::CarsController#index as HTML
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1709)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:26:50 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5330)
+
+
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:56 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 1493)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:56 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 993)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:56 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1009)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:56 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:57 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:57 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:57 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:26:58 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 1006)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started PATCH "/api/v1/cars/8" for ::1 at 2020-11-28 15:26:59 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCar Update (1.4ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ? WHERE "cars"."id" = ?[0m  [["likes", 2], ["id", 8]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+Completed 200 OK in 43ms (Views: 0.4ms | ActiveRecord: 18.6ms | Allocations: 6735)
+
+
+Started PATCH "/api/v1/cars/8" for ::1 at 2020-11-28 15:27:00 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCar Update (1.8ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ? WHERE "cars"."id" = ?[0m  [["likes", 3], ["id", 8]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[35m (15.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+Completed 200 OK in 30ms (Views: 0.4ms | ActiveRecord: 18.3ms | Allocations: 4942)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:28:04 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1165)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:28:05 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1165)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:28:06 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1165)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:28:06 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1163)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:28:06 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1163)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:28:06 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123456"}}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1163)
+
+
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:10 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 995)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:10 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:10 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:11 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:11 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:12 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 993)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:12 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:15 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 989)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:16 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:18 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:20 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:20 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:20 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:21 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:23 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:28:24 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started PATCH "/api/v1/cars/8" for ::1 at 2020-11-28 15:28:26 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCar Update (1.4ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ? WHERE "cars"."id" = ?[0m  [["likes", 4], ["id", 8]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 12.7ms | Allocations: 4227)
+
+
+Started DELETE "/api/v1/cars/8" for ::1 at 2020-11-28 15:28:28 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+  [1m[36mCar Destroy (2.1ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 12.4ms | Allocations: 2572)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 15:29:09 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 1.3ms | Allocations: 6916)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:29:16 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123"}}
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:29:17 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1159)
+
+
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:19 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 1172)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:19 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:20 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:20 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:20 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 989)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:21 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:21 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:21 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:22 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:29:22 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 15:32:37 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 1582)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:32:46 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123"}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1159)
+
+
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:32:48 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 995)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:32:48 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:32:49 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:32:49 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
+Started PATCH "/api/v1/cars/7" for ::1 at 2020-11-28 15:34:05 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ? WHERE "cars"."id" = ?[0m  [["likes", 4], ["id", 7]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 16.4ms | Allocations: 6203)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 15:34:12 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 1581)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 15:34:15 -0600
+Processing by Api::V1::CarsController#index as HTML
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1579)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 15:34:30 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms | Allocations: 1581)
+
+
+Started PATCH "/api/v1/cars/6" for ::1 at 2020-11-28 15:34:38 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[36mCar Update (1.3ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ? WHERE "cars"."id" = ?[0m  [["likes", 3], ["id", 6]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `update'
+Completed 200 OK in 29ms (Views: 0.9ms | ActiveRecord: 10.8ms | Allocations: 4945)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-11-28 15:34:45 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123", "car"=>{"year"=>"123", "make"=>"make", "model"=>"model", "image"=>"123"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1159)
+
+
+Started PATCH "/api/v1/cars/null" for ::1 at 2020-11-28 15:34:47 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 995)
+
+
+  
+NoMethodError (undefined method `likes' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:16:in `update'
+Started DELETE "/api/v1/cars/null" for ::1 at 2020-11-28 15:34:48 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/api/v1/cars_controller.rb:22:in `destroy'
