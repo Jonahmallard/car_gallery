@@ -1,4 +1,4 @@
-cars =  
+cars =  [
     {
       "id": 1,
       "year": 2016,
@@ -71,11 +71,12 @@ cars =
       "likes": 1,
       "category_id": 3
     }
+  ]
 
 Category.create(name: "Cars")
 Category.create(name: "Trucks")
 Category.create(name: "Recreational Vehicles")
 
 cars.each do |car|
-    Car.create(year: car[:year], make: car[:make], model: car[:model], image: car[:image], likes: car[:likes])
+    Car.create(year: car[:year], make: car[:make], model: car[:model], image: car[:image], likes: car[:likes], category_id: car[:category_id])
 end

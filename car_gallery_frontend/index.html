@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css" />
-    <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
-    <title></title>
-  </head>
-  <body>
-   Sample text - replace me! 
-   <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Car Gallery</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <h1>The Car Gallery</h1>
+        <div id="car-header">
+            <img
+                src="https://www.tirestickers.com/wp-content/uploads/2015/04/michelin-tire-race-car-banner.jpg"
+                alt="car-header"
+            />
+        </div>
+
+        <div class="container"></div>
+
+        <p style="text-align: center">
+            <button id="new-car-btn">Add a new car!</button>
+        </p>
+
+        <div id="car-collection"></div>
+        <script src="src/services/ApiService.js"></script>
+        <script src="src/components/CarCard.js"></script>
+        <script src="src/components/CarForm.js"></script>
+        <script type="text/javascript" src="src/index.js"></script>
+    </body>
 </html>
