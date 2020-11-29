@@ -19,9 +19,16 @@ h3 {
   justify-content: center;
   background-color: black;
 }
+
+#car-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
   
 img {
   height: 10rem;
+  width: 50rem;
 }
   
 #car-collection {
@@ -32,9 +39,8 @@ img {
   text-align: center;
   border: black solid 1px;
   padding: 1rem;
-  width: 17rem;
+  width: 20rem;
   height: 25rem;
-  margin: 1rem 2rem;
 }
 
 .car-avatar {
