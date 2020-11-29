@@ -5,7 +5,7 @@ class ApiService {
 
     getAllCars = () => fetch(`${this.baseURL}/cars`).then(res => res.json());
 
-    updateLikes = (id) => fetch(`${this.baseURL}/cars/${id}`, { method: "PATCH" }).then((res) => res.json());
+    updateVotes = (id) => fetch(`${this.baseURL}/cars/${id}`, { method: "PATCH" }).then((res) => res.json());
 
     createCar = (data) => {
         const config = {

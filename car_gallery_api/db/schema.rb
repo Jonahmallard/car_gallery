@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_28_210412) do
+ActiveRecord::Schema.define(version: 2020_11_29_035434) do
 
   create_table "cars", force: :cascade do |t|
     t.integer "year"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_11_28_210412) do
     t.string "image"
     t.integer "likes"
     t.integer "category_id"
+    t.integer "dislikes"
   end
 
   create_table "categories", force: :cascade do |t|

@@ -1,13 +1,13 @@
 body {
-    margin: 0;
-    font-family: Helvetica;
-    background-color: black;
-    color: white;
-  }
+  margin: 0;
+  font-family: Helvetica;
+  background-color: black;
+  color: white;
+}
   
 h1 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 h3 {
@@ -32,68 +32,71 @@ img {
   text-align: center;
   border: black solid 1px;
   padding: 1rem;
-  width: 18rem;
+  width: 17rem;
   height: 25rem;
-  display: inline-grid;
   margin: 1rem 2rem;
 }
-  
-  .car-avatar {
-    justify-self: center;
-    height: 10rem;
-    width: auto;
-  }
-  
-  button {
-    position: relative;
-    background-color: white;
-    border: black solid 1px;
-    border-radius: 5px;
-    height: 3rem;
-    width: max-content;
-    color: black;
-    font-size: 18px;
-    justify-self: center;
-    display: flexbox;
-  }
-  
-  
-  .container {
-    padding: 1rem;
-    width: stretch;
-    height: auto;
-    display: none;
+
+.car-avatar {
+  justify-self: center;
+  height: 10rem;
+  width: auto;
+}
+
+button {
+  position: relative;
+  background-color: white;
+  border: black solid 1px;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: black;
+  font-size: 18px;
+  justify-self: center;
+}
+
+div {
+  display: inline-block;
+  padding: 25px;
+  justify-content: space-evenly;
+}
+
+.container {
+  padding: 1rem;
+  width: stretch;
+  height: auto;
+  display: none;
+}
+
+.add-car-form {
+    width: 60%
+}
+
+.submit {
+  position: relative;
+  background-color: black;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  color: white;
+  font-size: 18px;
+  justify-self: center;
+  font-family: Helvetica;
+  margin: 3px;
+  border: white solid 1px;
+}
+
+.submit:hover {
+  background-color: white;
+  border: black solid 1px;
+  color: black;
 }
   
-  .add-car-form {
-    width: 60%
-  }
   
-  .submit {
-    position: relative;
-    background-color: black;
-    border-radius: 5px;
-    height: 2rem;
-    width: max-content;
-    color: white;
-    font-size: 18px;
-    justify-self: center;
-    font-family: Helvetica;
-    margin: 3px;
-    border: white solid 1px;
-  }
-  
-  .submit:hover {
-    background-color: white;
-    border: black solid 1px;
-    color: black;
-  }
-  
-  
-  .input-text {
-    height: 2rem;
-    width: 60%;
-    font-size: 18px;
-    font-family: Helvetica;
-    margin: 3px;
-  }
+.input-text {
+  height: 2rem;
+  width: 60%;
+  font-size: 18px;
+  font-family: Helvetica;
+  margin: 3px;
+}
