@@ -7500,3 +7500,219 @@ Processing by Api::V1::CarsController#index as */*
 Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 1.3ms | Allocations: 8388)
 
 
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:43:31 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms | Allocations: 1775)
+
+
+Started PATCH "/api/v1/cars/8" for ::1 at 2020-11-28 22:43:36 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 2], ["id", 8]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 45ms (Views: 0.4ms | ActiveRecord: 15.9ms | Allocations: 10653)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:44:25 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 1775)
+
+
+Started PATCH "/api/v1/cars/5" for ::1 at 2020-11-28 22:44:31 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 2], ["id", 5]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 29ms (Views: 0.4ms | ActiveRecord: 15.6ms | Allocations: 4971)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:45:50 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 1758)
+
+
+Started PATCH "/api/v1/cars/5" for ::1 at 2020-11-28 22:45:55 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.3ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 3], ["id", 5]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 8.9ms | Allocations: 4978)
+
+
+Started PATCH "/api/v1/cars/5" for ::1 at 2020-11-28 22:45:57 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.0ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 4], ["id", 5]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 14.8ms | Allocations: 4578)
+
+
+Started PATCH "/api/v1/cars/5" for ::1 at 2020-11-28 22:45:59 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.3ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 5], ["id", 5]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 14.1ms | Allocations: 4999)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:47:38 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.7ms | Allocations: 1758)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:48:06 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms | Allocations: 1758)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:48:36 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 1758)
+
+
+Started PATCH "/api/v1/cars/5" for ::1 at 2020-11-28 22:48:54 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (2.4ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 6], ["id", 5]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 10.4ms | Allocations: 4587)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:49:47 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.5ms | Allocations: 1758)
+
+
+Started PATCH "/api/v1/cars/6" for ::1 at 2020-11-28 22:49:56 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 2], ["id", 6]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 9.9ms | Allocations: 5007)
+
+
+Started PATCH "/api/v1/cars/6" for ::1 at 2020-11-28 22:49:57 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 3], ["id", 6]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 8.5ms | Allocations: 4998)
+
+
+Started PATCH "/api/v1/cars/6" for ::1 at 2020-11-28 22:49:57 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.1ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 4], ["id", 6]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 8.9ms | Allocations: 4992)
+
+
+Started PATCH "/api/v1/cars/6" for ::1 at 2020-11-28 22:49:59 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.4ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 5], ["id", 6]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 15.8ms | Allocations: 4576)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:51:30 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (2.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 2.2ms | Allocations: 1758)
+
+

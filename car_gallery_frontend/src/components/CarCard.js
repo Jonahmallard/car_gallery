@@ -31,11 +31,11 @@ class CarCard {
     };
 
     upVotesHTML = (number) => {
-        this.card.children[2].innerHTML = `${number} Upvotes | ${number} Downvotes`;
+        this.card.children[2].innerHTML = `${number} Upvotes`;
     };
 
     downVotesHTML = (number) => {
-        this.card.children[2].innerHTML = `${number} Upvotes | ${number} Downvotes`;
+        this.card.children[3].innerHTML = `${number} Downvotes`;
     };
 
     render() {
@@ -53,7 +53,8 @@ class CarCard {
         this.card.innerHTML = `
         <h2>${year} ${make} ${model}</h2>
         <img src="${image}" class="car-avatar" />
-        <p>${likes} Upvotes <strong>&</strong> <span>${dislikes} Downvotes</span></p>
+        <div>${likes} Upvotes</div> 
+        <div>${dislikes} Downvotes</div>
         <button class="upVt-btn">Upvote</button>
         <button class="downVt-btn">Downvote</button>
         <button style="background-color:red;"class="delete-btn">Delete</button>
