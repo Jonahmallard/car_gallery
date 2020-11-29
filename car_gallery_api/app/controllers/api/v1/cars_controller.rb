@@ -15,7 +15,7 @@ class Api::V1::CarsController < ApplicationController
 
     def update
         @car = Car.find_by_id(params[:id])
-        if (!@car.likes)
+        if 
             @car.update(likes: @car.likes + 1)
         else 
             @car.update(dislikes: @car.dislikes + 1)
