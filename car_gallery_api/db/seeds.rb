@@ -73,6 +73,8 @@ cars =  [
     }
   ]
 
+# Car.create(year: 1977, make: "Yamaha", model: "Raptor", image: "17363816")
+
 Category.create(name: "Cars")
 Category.create(name: "Trucks")
 Category.create(name: "Recreational Vehicles")

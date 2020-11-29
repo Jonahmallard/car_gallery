@@ -7,6 +7,7 @@ class Api::V1::CarsController < ApplicationController
     def create
         @car = Car.create(car_params)
         @car.likes = 0
+        @car.category_id = 1
         @car.save
         render json: @car
     end
@@ -26,6 +27,6 @@ class Api::V1::CarsController < ApplicationController
     private 
 
     def car_params
-        params.require(:car).permit(:year, :make, :model, :image)
+        params.require(:car).permit(:year, :make, :model, :image, :category_id)
     end
 end
