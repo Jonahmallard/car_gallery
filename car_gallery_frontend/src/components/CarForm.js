@@ -32,7 +32,13 @@ class CarForm {
 
     renderInnerHTML = () => {
         return `
-        <h3>Add a new car!</h3>
+        <br />
+        <select name="category_id">
+            <option>Car</option>
+            <option>Truck</option>
+            <option>Recreational Vehicle</option>
+        </select>
+        <br />
         <input
             type="text"
             name="year"
