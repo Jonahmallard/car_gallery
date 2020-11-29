@@ -7236,3 +7236,267 @@ Processing by Api::V1::CarsController#index as */*
 Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.3ms | Allocations: 1756)
 
 
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:44 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 102], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 48ms (Views: 1.4ms | ActiveRecord: 10.5ms | Allocations: 15982)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:44 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.1ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 103], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 9.2ms | Allocations: 5014)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:45 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 104], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 16.5ms | Allocations: 4624)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:45 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 105], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 14.7ms | Allocations: 4255)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:46 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.1ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 106], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 28ms (Views: 0.4ms | ActiveRecord: 15.3ms | Allocations: 5014)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:47 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.0ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 107], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 14.8ms | Allocations: 5011)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:47 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.2ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 108], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 26ms (Views: 0.4ms | ActiveRecord: 15.2ms | Allocations: 5000)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:47 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (1.0ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 109], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 8.4ms | Allocations: 4230)
+
+
+Started PATCH "/api/v1/cars/14" for ::1 at 2020-11-28 22:35:48 -0600
+Processing by Api::V1::CarsController#update as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:17:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[36mCar Update (0.9ms)[0m  [1m[33mUPDATE "cars" SET "dislikes" = ? WHERE "cars"."id" = ?[0m  [["dislikes", 110], ["id", 14]]
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:21:in `update'
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 15.6ms | Allocations: 6117)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:35:49 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.5ms | Allocations: 1779)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "cars"[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "year" integer, "make" varchar, "model" varchar, "image" varchar, "likes" integer, "category_id" integer, "dislikes" integer)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "categories"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201129035434)[0m
+  [1m[35m (7.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201128210352),
+(20201128210412);
+
+[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-29 04:37:39.512393"], ["updated_at", "2020-11-29 04:37:39.512393"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "44f1984fcdf1379845f9a9d1d47d99a77ebd8d0a"], ["created_at", "2020-11-29 04:37:39.543317"], ["updated_at", "2020-11-29 04:37:39.543317"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "cars"[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "cars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "year" integer, "make" varchar, "model" varchar, "image" varchar, "likes" integer, "category_id" integer, "dislikes" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "categories"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar)[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (7.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201129035434)[0m
+  [1m[35m (7.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201128210352),
+(20201128210412);
+
+[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-29 04:37:39.633836"], ["updated_at", "2020-11-29 04:37:39.633836"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-11-29 04:37:39.648083"], ["key", "environment"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "44f1984fcdf1379845f9a9d1d47d99a77ebd8d0a"], ["created_at", "2020-11-29 04:37:39.663740"], ["updated_at", "2020-11-29 04:37:39.663740"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (1.1ms)[0m  [1m[32mINSERT INTO "categories" ("name") VALUES (?)[0m  [["name", "Cars"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (1.1ms)[0m  [1m[32mINSERT INTO "categories" ("name") VALUES (?)[0m  [["name", "Trucks"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO "categories" ("name") VALUES (?)[0m  [["name", "Recreational Vehicles"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 2016], ["make", "Toyota"], ["model", "Scion FR-S"], ["image", "https://file.kelleybluebookimages.com/kbb/base/evox/StJ/10531/2016-Scion-FR-S-front-angle6_10531_116_640x480.jpg"], ["likes", 5], ["category_id", 1], ["dislikes", 1]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 1996], ["make", "Nissan"], ["model", "Skyline"], ["image", "https://bestcarmag.com/sites/default/files/91477331996_nissan_skyline-pic-7446485517683503954.jpeg"], ["likes", 8], ["category_id", 1], ["dislikes", 1]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 1968], ["make", "Chevrolet"], ["model", "Nova"], ["image", "https://cdn.classicdigest.com/live/carimg/20501_20600/20504_f9d6824b8d407667.jpg"], ["likes", 3], ["category_id", 1], ["dislikes", 1]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 1967], ["make", "Mini"], ["model", "Cooper"], ["image", "https://bringatrailer.com/wp-content/uploads/2019/10/1967_austin_mini_cooper_s_1571942346c519f6b34c9898DSC_0437-e1571966832781.jpg?fit=940%2C627"], ["likes", 4], ["category_id", 1], ["dislikes", 1]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Create (1.1ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 2017], ["make", "Ford"], ["model", "F-150 SVT Raptor"], ["image", "https://s1.cdn.autoevolution.com/images/models/FORD_F-150-SVT-Raptor-2017_main.jpg"], ["likes", 1], ["category_id", 2], ["dislikes", 1]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 1992], ["make", "Ford"], ["model", "Ranger"], ["image", "https://s1.cdn.autoevolution.com/images/models/FORD_F-150-SVT-Raptor-2017_main.jpg"], ["likes", 2], ["category_id", 2], ["dislikes", 1]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 2006], ["make", "Honda"], ["model", "Grom"], ["image", "https://s1.cdn.autoevolution.com/images/models/FORD_F-150-SVT-Raptor-2017_main.jpg"], ["likes", 3], ["category_id", 3], ["dislikes", 1]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCar Create (1.0ms)[0m  [1m[32mINSERT INTO "cars" ("year", "make", "model", "image", "likes", "category_id", "dislikes") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["year", 2011], ["make", "Yamaha"], ["model", "Raptor"], ["image", "https://s1.cdn.autoevolution.com/images/models/FORD_F-150-SVT-Raptor-2017_main.jpg"], ["likes", 1], ["category_id", 3], ["dislikes", 1]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/cars" for ::1 at 2020-11-28 22:37:52 -0600
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 1.3ms | Allocations: 8388)
+
+
