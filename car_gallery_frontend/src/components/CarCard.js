@@ -20,10 +20,10 @@ class CarCard {
     handleOnClick = (event) => {
         if (event.target.className == "upVt-btn") {
              const id = this.card.dataset.id;
-             api.updateVotes(id).then((car) => this.upVotesHTML(car.likes));
+             api.updateVotes(id, "upvote").then((car) => this.upVotesHTML(car.likes));
         } if (event.target.className == "downVt-btn") {
             const id = this.card.dataset.id;
-            api.updateVotes(id).then((car) => this.downVotesHTML(car.dislikes));
+            api.updateVotes(id, "downvote").then((car) => this.downVotesHTML(car.dislikes));
         } if (event.target.className == "delete-btn") {
             const id = this.card.dataset.id;
             api.deleteCar(id).then((car) => this.card.remove())
@@ -48,10 +48,11 @@ class CarCard {
     }
 
     renderInnerHTML() {
-        const {year, make, model, image, likes, dislikes} = this.car;
+        const {year, make, model, image, likes, dislikes, category } = this.car;
 
         this.card.innerHTML = `
         <h2>${year} ${make} ${model}</h2>
+        <p>${category.name}</p>
         <img src="${image}" class="car-avatar" />
         <div>${likes} Upvotes</div> 
         <div>${dislikes} Downvotes</div>

@@ -12,12 +12,13 @@ class CarForm {
 
     handleOnSubmit = (event) => {
         event.preventDefault();
-        const { year, make, model, image } = event.target;
+        const { year, make, model, image, category_id } = event.target;
         const data = {
             year: year.value,
             make: make.value,
             model: model.value,
             image: image.value,
+            category_id: category_id.value
         };
         api.createCar(data).then((car) => new CarCard(car));
     };
@@ -34,9 +35,9 @@ class CarForm {
         return `
         <br />
         <select name="category_id">
-            <option>Car</option>
-            <option>Truck</option>
-            <option>Recreational Vehicle</option>
+            <option value="1">Car</option>
+            <option value="2">Truck</option>
+            <option value="3">Recreational Vehicle</option>
         </select>
         <br />
         <input

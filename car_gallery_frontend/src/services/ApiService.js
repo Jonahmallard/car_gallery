@@ -5,7 +5,17 @@ class ApiService {
 
     getAllCars = () => fetch(`${this.baseURL}/cars`).then(res => res.json());
 
-    updateVotes = (id) => fetch(`${this.baseURL}/cars/${id}`, { method: "PATCH" }).then((res) => res.json());
+    updateVotes = (id, voteType) => {
+        const config = {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({voteType})
+        };
+        return fetch(`${this.baseURL}/cars/${id}`, config).then((res) => res.json());
+    }
 
     createCar = (data) => {
         const config = {
