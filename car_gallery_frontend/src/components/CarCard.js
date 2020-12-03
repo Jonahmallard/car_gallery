@@ -31,11 +31,11 @@ class CarCard {
     };
 
     upVotesHTML = (number) => {
-        this.card.children[2].innerHTML = `${number} Upvotes`;
+        this.card.children[3].innerHTML = `${number} Upvotes`;
     };
 
     downVotesHTML = (number) => {
-        this.card.children[3].innerHTML = `${number} Downvotes`;
+        this.card.children[4].innerHTML = `${number} Downvotes`;
     };
 
     render() {
