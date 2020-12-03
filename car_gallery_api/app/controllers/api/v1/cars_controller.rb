@@ -1,6 +1,10 @@
 class Api::V1::CarsController < ApplicationController
     def index
-        @cars = Car.all
+        if params[:category_id]
+            @cars = Car.where("category_id = ?", params[:category_id])
+        else
+            @cars = Car.all
+        end
         render json: @cars, include: :category
     end
 
