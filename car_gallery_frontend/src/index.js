@@ -2,6 +2,10 @@ let addCar = false;
 const api = new ApiService("http://localhost:3000/api/v1");
 
 document.addEventListener("DOMContentLoaded", () => {
+    let category = document.getElementById("category_id")
+    category.addEventListener("change", () => {
+        event.target.value
+    })
     CarCard.getAll();
     new CarForm();
     const addBtn = document.querySelector("#new-car-btn");

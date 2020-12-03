@@ -3,6 +3,8 @@ class ApiService {
         this.baseURL = baseURL;
     }
 
+    getCarsByCategory = (id) => fetch(`${this.baseURL}/categories/${id}/cars`).then((res) => res.json());
+
     getAllCars = () => fetch(`${this.baseURL}/cars`).then(res => res.json());
 
     updateVotes = (id, voteType) => {
