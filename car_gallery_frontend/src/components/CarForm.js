@@ -33,7 +33,7 @@ class CarForm {
 
     renderInnerHTML = () => {
         return `
-        <br />
+        <div>Category: </div>
         <select name="category_id">
             <option value="1">Car</option>
             <option value="2">Truck</option>
@@ -44,21 +44,21 @@ class CarForm {
             type="text"
             name="year"
             value=""
-            placeholder="Enter the car's year..."
+            placeholder="Enter the vehicle's Year"
             class="input-text"
         />
         <input
             type="text"
             name="make"
             value=""
-            placeholder="Enter the car's make..."
+            placeholder="Make"
             class="input-text"
         />
         <input
             type="text"
             name="model"
             value=""
-            placeholder="Enter the car's model..."
+            placeholder="Model"
             class="input-text"
         />
         <br />
@@ -66,7 +66,7 @@ class CarForm {
             type="text"
             name="image"
             value=""
-            placeholder="Enter the car's image URL..."
+            placeholder="and Image URL"
             class="input-text"
         />
         <br />

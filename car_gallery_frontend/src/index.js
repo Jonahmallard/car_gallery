@@ -4,7 +4,12 @@ const api = new ApiService("http://localhost:3000/api/v1");
 document.addEventListener("DOMContentLoaded", () => {
     let category = document.getElementById("category_id")
     category.addEventListener("change", () => {
-        event.target.value
+        const id = event.target.value;
+        CarCard.getAllByCategory(id);
+    })
+    let reset = document.getElementById("reset")
+    reset.addEventListener("click", () => {
+        CarCard.getAll();
     })
     CarCard.getAll();
     new CarForm();

@@ -4,31 +4,30 @@ body {
   background-color: black;
   color: white;
 }
-  
+
 h1 {
   text-align: center;
   color: white;
 }
 
 h3 {
-  color: whitesmoke;
+  color: white;
+}
+
+#content {
+  justify-content: space-evenly;
 }
 
 #car-header {
   display: flex;
   justify-content: center;
-  background-color: black;
-}
-
-#car-header {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-}
+  background-color: grey;
+  background-size: cover;
+} 
   
 img {
   height: 10rem;
-  width: 48rem;
+  width: 50rem;
 }
   
 #car-collection {
@@ -74,8 +73,8 @@ div {
   display: none;
 }
 
-.add-car-form {
-    width: 60%
+#reset {
+  margin-left: 25px;
 }
 
 .submit {

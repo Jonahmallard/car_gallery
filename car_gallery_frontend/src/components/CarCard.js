@@ -8,7 +8,15 @@ class CarCard {
     }
 
     static getAll () {
+        this.container.innerHTML = "";
         api.getAllCars().then((data) => 
+            data.forEach((car) => new CarCard(car))
+        );
+    }
+
+    static getAllByCategory (id) {
+        this.container.innerHTML = "";
+        api.getCarsByCategory(id).then((data) => 
             data.forEach((car) => new CarCard(car))
         );
     }
