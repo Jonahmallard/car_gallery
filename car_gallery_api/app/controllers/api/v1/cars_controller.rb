@@ -9,11 +9,14 @@ class Api::V1::CarsController < ApplicationController
     end
 
     def create
-        @car = Car.create(car_params)
-        @car.likes = 0
-        @car.dislikes = 0
-        @car.save
-        render json: @car, include: :category
+        if car_params != ""
+            @car = Car.create(car_params)
+            @car.likes = 0
+            @car.dislikes = 0
+            @car.save
+        else
+            render json: @car, include: :category
+        end
     end
 
     def update

@@ -14909,3 +14909,1158 @@ Processing by Api::V1::CarsController#index as */*
 Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 1.3ms | Allocations: 15871)
 
 
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:22:34 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (2.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 148ms (Views: 140.3ms | ActiveRecord: 7.2ms | Allocations: 15871)
+
+
+Started GET "/api/v1/categories/2/cars" for ::1 at 2020-12-03 18:22:36 -0600
+Processing by Api::V1::CarsController#index as */*
+  Parameters: {"category_id"=>"2"}
+  [1m[36mCar Load (0.9ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE (category_id = '2')[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 1.1ms | Allocations: 5174)
+
+
+Started GET "/api/v1/categories/3/cars" for ::1 at 2020-12-03 18:22:37 -0600
+Processing by Api::V1::CarsController#index as */*
+  Parameters: {"category_id"=>"3"}
+  [1m[36mCar Load (1.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE (category_id = '3')[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (2.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 90ms (Views: 84.6ms | ActiveRecord: 3.9ms | Allocations: 6238)
+
+
+Started GET "/api/v1/categories/1/cars" for ::1 at 2020-12-03 18:22:40 -0600
+Processing by Api::V1::CarsController#index as */*
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE (category_id = '1')[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 1.3ms | Allocations: 6238)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:22:43 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (9.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 135ms (Views: 121.8ms | ActiveRecord: 12.6ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:23:29 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 1.4ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:23:50 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 2.9ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:23:59 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (2.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (3.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 244ms (Views: 234.0ms | ActiveRecord: 7.3ms | Allocations: 15875)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:24:24 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (7.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 161ms (Views: 148.7ms | ActiveRecord: 10.8ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:24:43 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 186ms (Views: 180.7ms | ActiveRecord: 4.5ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:24:59 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 133ms (Views: 122.7ms | ActiveRecord: 4.2ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:25:12 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 129ms (Views: 123.1ms | ActiveRecord: 5.0ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:25:26 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (9.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 78ms (Views: 66.7ms | ActiveRecord: 10.9ms | Allocations: 15874)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:25:35 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 1.2ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:25:44 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 155ms (Views: 147.4ms | ActiveRecord: 2.2ms | Allocations: 15874)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:25:58 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 135ms (Views: 131.9ms | ActiveRecord: 2.2ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:26:09 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (1.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 152ms (Views: 147.7ms | ActiveRecord: 3.6ms | Allocations: 15871)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:26:10 -0600
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 2.0ms | Allocations: 15874)
+
+
+Started GET "/api/v1/categories/2/cars" for ::1 at 2020-12-03 18:26:11 -0600
+Processing by Api::V1::CarsController#index as */*
+  Parameters: {"category_id"=>"2"}
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE (category_id = '2')[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.8ms | Allocations: 5171)
+
+
+Started GET "/api/v1/categories/3/cars" for ::1 at 2020-12-03 18:26:13 -0600
+Processing by Api::V1::CarsController#index as */*
+  Parameters: {"category_id"=>"3"}
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE (category_id = '3')[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 1.2ms | Allocations: 6238)
+
+
+Started GET "/api/v1/categories/1/cars" for ::1 at 2020-12-03 18:26:20 -0600
+Processing by Api::V1::CarsController#index as */*
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCar Load (1.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE (category_id = '1')[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 1.9ms | Allocations: 6238)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:26:30 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[36mCar Create (6.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+  [1m[36mCar Update (2.2ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 15]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+Completed 200 OK in 73ms (Views: 1.7ms | ActiveRecord: 43.9ms | Allocations: 7547)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:26:31 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[36mCar Create (1.2ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+  [1m[36mCar Update (2.4ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 16]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+  [1m[35m (20.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+Completed 200 OK in 78ms (Views: 4.6ms | ActiveRecord: 40.1ms | Allocations: 8989)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:26:31 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[36mCar Create (2.8ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:12:in `create'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+  [1m[36mCar Update (2.1ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 17]]
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:15:in `create'
+Completed 200 OK in 96ms (Views: 0.8ms | ActiveRecord: 38.4ms | Allocations: 8994)
+
+
+Started DELETE "/api/v1/cars/16" for ::1 at 2020-12-03 18:26:37 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:30:in `destroy'
+  [1m[35m (3.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+  [1m[36mCar Destroy (8.9ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+Completed 200 OK in 40ms (Views: 0.5ms | ActiveRecord: 26.5ms | Allocations: 2577)
+
+
+Started DELETE "/api/v1/cars/17" for ::1 at 2020-12-03 18:26:38 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:30:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+  [1m[36mCar Destroy (1.5ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 14.2ms | Allocations: 2916)
+
+
+Started DELETE "/api/v1/cars/15" for ::1 at 2020-12-03 18:26:39 -0600
+Processing by Api::V1::CarsController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:30:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+  [1m[36mCar Destroy (1.0ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:31:in `destroy'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 10.8ms | Allocations: 2902)
+
+
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:28:24 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+... = Car.create(car_params unless car_params = "")
+...                         ^~~~~~
+/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+..._params unless car_params = "")
+...                              ^):
+  
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:28:27 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+... = Car.create(car_params unless car_params = "")
+...                         ^~~~~~
+/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+..._params unless car_params = "")
+...                              ^):
+  
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:28:28 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+... = Car.create(car_params unless car_params = "")
+...                         ^~~~~~
+/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+..._params unless car_params = "")
+...                              ^):
+  
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:28:28 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+... = Car.create(car_params unless car_params = "")
+...                         ^~~~~~
+/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+..._params unless car_params = "")
+...                              ^):
+  
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:28:28 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+... = Car.create(car_params unless car_params = "")
+...                         ^~~~~~
+/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+..._params unless car_params = "")
+...                              ^):
+  
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:28:28 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+... = Car.create(car_params unless car_params = "")
+...                         ^~~~~~
+/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+..._params unless car_params = "")
+...                              ^):
+  
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected unless (modifier), expecting ')'
+app/controllers/api/v1/cars_controller.rb:12: syntax error, unexpected ')', expecting end
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:29:40 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:13: Invalid break):
+  
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:29:43 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:13: Invalid break):
+  
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:29:43 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:13: Invalid break):
+  
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:29:43 -0600
+  
+SyntaxError (/home/jonah/code/projects/car_gallery/car_gallery_api/app/controllers/api/v1/cars_controller.rb:13: Invalid break):
+  
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb:13: Invalid break
+app/controllers/api/v1/cars_controller.rb
+Started GET "/api/v1/cars" for ::1 at 2020-12-03 18:30:25 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::CarsController#index as */*
+  [1m[36mCar Load (1.0ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (6.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:8:in `index'
+Completed 200 OK in 185ms (Views: 159.7ms | ActiveRecord: 20.7ms | Allocations: 24061)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:32 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (3.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (22.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (2.8ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 18]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 72ms (ActiveRecord: 36.2ms | Allocations: 7416)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:33 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (2.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (18.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (2.0ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 19]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 100ms (ActiveRecord: 38.5ms | Allocations: 8439)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:33 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (3.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (1.6ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (3.0ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 20]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 80ms (ActiveRecord: 33.7ms | Allocations: 9511)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:33 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (2.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (1.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (2.8ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 21]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 106ms (ActiveRecord: 38.1ms | Allocations: 8676)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:33 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (3.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (6.7ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 22]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (22.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 102ms (ActiveRecord: 41.5ms | Allocations: 9982)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:39 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (2.5ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (24.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (2.6ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 23]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (20.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 107ms (ActiveRecord: 51.5ms | Allocations: 8854)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:39 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (1.1ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (0.9ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 24]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 32ms (ActiveRecord: 16.8ms | Allocations: 7871)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:39 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (1.3ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (1.0ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 25]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 40ms (ActiveRecord: 17.8ms | Allocations: 6945)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:39 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (4.1ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (6.4ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 26]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 61ms (ActiveRecord: 32.3ms | Allocations: 7381)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:39 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (2.4ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (3.1ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 27]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 72ms (ActiveRecord: 34.1ms | Allocations: 7669)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:40 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (6.8ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (12.1ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 28]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 107ms (ActiveRecord: 45.0ms | Allocations: 9984)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:40 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (2.1ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (4.3ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 29]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 86ms (ActiveRecord: 33.9ms | Allocations: 8838)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:40 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (1.1ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (1.7ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 30]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 54ms (ActiveRecord: 26.9ms | Allocations: 6972)
+
+
+Started POST "/api/v1/cars" for ::1 at 2020-12-03 18:30:40 -0600
+Processing by Api::V1::CarsController#create as JSON
+  Parameters: {"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1", "car"=>{"year"=>"", "make"=>"", "model"=>"", "image"=>"", "category_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (2.8ms)[0m  [1m[32mINSERT INTO "cars" ("make", "model", "image", "category_id") VALUES (?, ?, ?, ?)[0m  [["make", ""], ["model", ""], ["image", ""], ["category_id", 1]]
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[36mCar Update (1.8ms)[0m  [1m[33mUPDATE "cars" SET "likes" = ?, "dislikes" = ? WHERE "cars"."id" = ?[0m  [["likes", 0], ["dislikes", 0], ["id", 31]]
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/cars_controller.rb:16:in `create'
+Completed 204 No Content in 39ms (ActiveRecord: 18.5ms | Allocations: 7317)
+
+
