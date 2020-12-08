@@ -41,6 +41,7 @@ class CarForm {
         </select>
         <br />
         <input
+            required
             type="text"
             name="year"
             value=""
@@ -48,6 +49,7 @@ class CarForm {
             class="input-text"
         />
         <input
+            required
             type="text"
             name="make"
             value=""
@@ -55,6 +57,7 @@ class CarForm {
             class="input-text"
         />
         <input
+            required
             type="text"
             name="model"
             value=""

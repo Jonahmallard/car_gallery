@@ -61,7 +61,7 @@ class CarCard {
         this.card.innerHTML = `
         <h2>${year} ${make} ${model}</h2>
         <p>${category.name}</p>
-        <img src="${image}" class="car-avatar" />
+        <img src=${image || "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bugatti-chiron-pur-sport-106-1582836604.jpg"} class="car-avatar" />
         <div>${likes} Upvotes</div> 
         <div>${dislikes} Downvotes</div>
         <button class="upVt-btn">Upvote</button>

@@ -2,15 +2,6 @@ let addCar = false;
 const api = new ApiService("http://localhost:3000/api/v1");
 
 document.addEventListener("DOMContentLoaded", () => {
-    let category = document.getElementById("category_id")
-    category.addEventListener("change", () => {
-        const id = event.target.value;
-        CarCard.getAllByCategory(id);
-    })
-    let reset = document.getElementById("reset")
-    reset.addEventListener("click", () => {
-        CarCard.getAll();
-    })
     CarCard.getAll();
     new CarForm();
     const addBtn = document.querySelector("#new-car-btn");
@@ -24,4 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
             carFormContainer.style.display = "none";
         }
     });
+    let category = document.getElementById("category_id")
+    category.addEventListener("change", () => {
+        const id = event.target.value;
+        CarCard.getAllByCategory(id);
+    })
+    let reset = document.getElementById("reset")
+    reset.addEventListener("click", () => {
+        CarCard.getAll();
+    })
 });
