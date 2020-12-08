@@ -69,7 +69,7 @@ class CarForm {
             type="text"
             name="image"
             value=""
-            placeholder="and Image URL"
+            placeholder="and Image URL(optional)"
             class="input-text"
         />
         <br />
